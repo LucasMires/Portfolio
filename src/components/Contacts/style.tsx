@@ -1,4 +1,4 @@
-import { styled } from "@/styles/stitches.config";
+import { styled } from "@/styles/stitches.config"
 
 export const ContactSection = styled("section", {
   background: "$grey1",
@@ -6,7 +6,7 @@ export const ContactSection = styled("section", {
   "@mobile": {
     padding: "$sectionMobile 0",
   },
-});
+})
 
 export const ContactSectionContent = styled("div", {
   display: "flex",
@@ -14,7 +14,7 @@ export const ContactSectionContent = styled("div", {
   "@mobile": {
     flexDirection: "column"
   },
-});
+})
 
 export const ContactSectionText = styled("aside", {
   maxWidth: "26.25rem",
@@ -27,7 +27,7 @@ export const ContactSectionText = styled("aside", {
     position: "static",
     marginBottom: "$5"
   },
-});
+})
 
 export const ContactsCards = styled("div", {
   display: "flex",
@@ -36,7 +36,7 @@ export const ContactsCards = styled("div", {
   "@mobile": {
     width: "100%",
   },
-});
+})
 
 export const ContactCard = styled("div", {
   width: "100%",
@@ -52,7 +52,7 @@ export const ContactCard = styled("div", {
   "@mobile": {
     paddingRight: "0",
   },
-});
+})
 
 export const ContactCardImage = styled("div", {
   minWidth: "4.5rem",
@@ -73,9 +73,9 @@ export const ContactCardImage = styled("div", {
   ["&.linkedin"]: {
     background: "linear-gradient(180deg, #4E73FF 0%, #506CCF 100%)",
   }
-});
+})
 
 export const ContactCardContent = styled("div", {
   display: "grid",
   gridGap: "$2",
-});
+})

@@ -1,18 +1,18 @@
 // Styles
-import { Container, Flex } from "@/styles/Global";
-import { Text } from "@/styles/Text";
-import { Button } from "@/styles/Buttons";
+import { Container, Flex } from "@/styles/Global"
+import { Text } from "@/styles/Text"
+import { Button } from "@/styles/Buttons"
 
 // Components
-import { Stack } from "@/components/Stack";
-import { Project } from "@/components/Project";
-import { Contacts } from "@/components/Contacts";
+import { Stack } from "@/components/Stack"
+import { Project } from "@/components/Project"
+import { Contacts } from "@/components/Contacts"
 
 // Data
-import { stackData } from "@/utils/stackData";
-import { userData } from "@/utils/userData";
+import { stackData } from "@/utils/stackData"
+import { userData } from "@/utils/userData"
 
-import { FaGithub } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa"
 
 // Page Style
 import {
@@ -25,11 +25,11 @@ import {
   ProjectsAreaSocialMediaMessage,
   ProjectAreaWrapperColumns,
   ProjectsAreaContent,
-} from "./style";
+} from "./style"
 
 export const Home = (): JSX.Element => {
-  const gihubUrl = `https://github.com/${userData.githubUser}`;
-  const portfolioUrl = `https://github.com/${userData.githubUser}/my-portfolio`;
+  const gihubUrl = `https://github.com/${userData.githubUser}`
+  const portfolioUrl = `https://github.com/${userData.githubUser}/portfolio`
 
   return (
     <main id="home">
@@ -48,18 +48,18 @@ export const Home = (): JSX.Element => {
             </Flex>
             <Text as="h1" type="heading1" color="grey5">
             I{" "}
+              really{" "}
               <Text as="span" type="heading1" color="brand1">
-                love
+                enjoy
               </Text>{" "}
-              creating and{" "}
+              create, study and{" "}
               <Text as="span" type="heading1" color="brand1">
                 developing
               </Text>{" "}
               projects
             </Text>
             <Text type="body1" color="grey2">
-              Discover here in this environment, created especially for you, all
-              my projects and technologies
+              Discover here in this environment, created to you understand a bit more about me and my work
             </Text>
             <HeaderButtonsArea>
               <Button as="a" type="primary" href="#projects">
@@ -79,6 +79,9 @@ export const Home = (): JSX.Element => {
                 <FaGithub />
               </Button>
             </HeaderButtonsArea>
+            /<Text as="h2" type="body1" color="grey2">
+              Few Tecnologies that I had study in this past few years
+            </Text>
             <StackCards>
               {stackData.map((stack, index) => (
                 <Stack key={index} title={stack.title} icon={stack.img} />
@@ -109,5 +112,5 @@ export const Home = (): JSX.Element => {
       </ProjectsArea>
       <Contacts />
     </main>
-  );
-};
+  )
+}

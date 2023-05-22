@@ -1,9 +1,9 @@
-import { styled } from "@/styles/stitches.config";
-import { Flex, Container } from "@/styles/Global";
-import { Button } from "@/styles/Buttons";
+import { styled } from "@/styles/stitches.config"
+import { Flex, Container } from "@/styles/Global"
+import { Button } from "@/styles/Buttons"
 
 export const Navbar = styled("nav", {
-  background: "$grey0",
+  background: "$grey6",
   borderBottom: "2px solid $brand1",
   position: "fixed",
   inset: 0,
@@ -20,11 +20,11 @@ export const Navbar = styled("nav", {
       flexDirection: "column",
     },
   },
-});
+})
 
 export const LogoTipo = styled(Flex, {
   alignItems: "center",
-});
+})
 
 export const LogoTipoText = styled("span", {
   fontSize: "1.25rem",
@@ -34,7 +34,7 @@ export const LogoTipoText = styled("span", {
   "@mobile": {
     fontSize: "1rem",
   },
-});
+})
 
 export const NavbarLinks = styled(Flex, {
   "@mobile": {
@@ -47,9 +47,9 @@ export const NavbarLinks = styled(Flex, {
       paddingLeft: 0,
     },
   },
-});
+})
 
 export const NavbarMobileArea = styled("div", {
   display: "flex",
   justifyContent: "space-between",
-});
+})

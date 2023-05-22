@@ -1,4 +1,4 @@
-import { createStitches } from "@stitches/react";
+import { createStitches } from "@stitches/react"
 
 export const { styled } = createStitches({
   media: {
@@ -12,4 +12,4 @@ export const { styled } = createStitches({
       marginRight: value,
     }),
   },
-});
+})

@@ -1,12 +1,12 @@
-import { styled } from "@/styles/stitches.config";
-import { Flex } from "@/styles/Global";
-import { Button } from "@/styles/Buttons";
-import { css } from "@stitches/react";
+import { styled } from "@/styles/stitches.config"
+import { Flex } from "@/styles/Global"
+import { Button } from "@/styles/Buttons"
+import { css } from "@stitches/react"
 
-import meIlustration from "@/public/static/img/background/me-ilustration.svg";
-import backgroundImg from "@/public/static/img/background/header-bg.svg";
+import meIlustration from "@/public/static/img/background/me-ilustration.svg"
+import backgroundImg from "@/public/static/img/background/header-bg.svg"
 
-import dots from "@/public/static/img/background/dots.svg";
+import dots from "@/public/static/img/background/dots.svg"
 
 export const Header = styled("header", {
   backgroundColor: "$grey1",
@@ -26,9 +26,9 @@ export const Header = styled("header", {
   "@mobileLittle": {
     padding: "9rem 0 0 0",
   },
-});
+})
 
-export const HeaderContent = styled("div", {
+export const HeaderContent = styled("main", {
   maxWidth: "100%",
   width: "36rem",
   display: "flex",
@@ -40,7 +40,7 @@ export const HeaderContent = styled("div", {
   "@mobile": {
     width: "100%",
   },
-});
+})
 
 export const HeaderButtonsArea = styled(Flex, {
   marginTop: "$2",
@@ -63,7 +63,7 @@ export const HeaderButtonsArea = styled(Flex, {
     gridGap: "$2",
     marginBottom: "$2",
   },
-});
+})
 
 export const UserImage = styled("img", {
   borderRadius: "50%",
@@ -71,14 +71,14 @@ export const UserImage = styled("img", {
     width: "2.25rem",
     height: "2.25rem",
   },
-});
+})
 
 export const StackSection = styled("div", {
   backgroundColor: "$grey4",
   padding: "4rem 0 2rem 0",
-});
+})
 
-export const StackCards = styled("div", {
+export const StackCards = styled("ul", {
   display: "grid",
   gridTemplateColumns: "1fr 1fr 1fr 1fr",
   padding: "3rem 0",
@@ -99,7 +99,7 @@ export const StackCards = styled("div", {
     margin: "0 -1rem",
     paddingInline: "1rem",
   },
-});
+})
 
 export const ProjectsArea = styled("section", {
   padding: "$section 0",
@@ -111,9 +111,9 @@ export const ProjectsArea = styled("section", {
     backgroundPosition: "right top 8rem",
     padding: "$sectionMobile 0",
   },
-});
+})
 
-export const ProjectsAreaSocialMediaMessage = styled("div", {
+export const ProjectsAreaSocialMediaMessage = styled("article", {
   display: "flex",
   flexDirection: "column",
   gap: "2rem",
@@ -124,7 +124,7 @@ export const ProjectsAreaSocialMediaMessage = styled("div", {
     order: "2",
     marginTop: "5rem",
   },
-});
+})
 
 export const ProjectsAreaContent = styled("div", {
   width: "100%",
@@ -135,7 +135,7 @@ export const ProjectsAreaContent = styled("div", {
     gridTemplateColumns: "1fr",
     overflow: "hidden",
   },
-});
+})
 
 export const ProjectAreaWrapperColumns = styled("div", {
   position: "relative",
@@ -143,4 +143,4 @@ export const ProjectAreaWrapperColumns = styled("div", {
   "@mobile": {
     flexDirection: "column",
   },
-});
+})

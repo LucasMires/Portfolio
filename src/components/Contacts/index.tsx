@@ -1,6 +1,6 @@
-import { Container } from "@/styles/Global";
-import { Text } from "@/styles/Text";
-import { motion, useTransform, useViewportScroll } from "framer-motion";
+import { Container } from "@/styles/Global"
+import { Text } from "@/styles/Text"
+import { motion, useTransform, useViewportScroll } from "framer-motion"
 
 import {
   ContactSection,
@@ -10,19 +10,19 @@ import {
   ContactCard,
   ContactCardImage,
   ContactCardContent,
-} from "./style";
+} from "./style"
 
-import { FaWhatsapp, FaEnvelopeOpen, FaLinkedin } from "react-icons/fa";
-import { useRef } from "react";
-import { userData } from "@/utils/userData";
+import { FaWhatsapp, FaEnvelopeOpen, FaLinkedin } from "react-icons/fa"
+import { useRef } from "react"
+import { userData } from "@/utils/userData"
 
 export const Contacts = () => {
-  const ref = useRef(null);
+  const ref = useRef(null)
 
-  const linkedInUrl = `https://www.linkedin.com/in/${userData.linkedinUser}`;
+  const linkedInUrl = `https://www.linkedin.com/in/${userData.linkedinUser}`
 
-  const { scrollYProgress } = useViewportScroll();
-  const scale = useTransform(scrollYProgress, [0, 1], [0.1, 0.9]);
+  const { scrollYProgress } = useViewportScroll()
+  const scale = useTransform(scrollYProgress, [0, 1], [0.1, 0.9])
 
   return (
     <ContactSection id="contact">
@@ -117,5 +117,5 @@ export const Contacts = () => {
         </ContactSectionContent>
       </Container>
     </ContactSection>
-  );
-};
+  )
+}
