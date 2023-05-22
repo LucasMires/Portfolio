@@ -1,6 +1,6 @@
-import { useState } from "react";
-import useMedia from "use-media";
-import { userData } from "@/utils/userData";
+import { useState } from "react"
+import useMedia from "use-media"
+import { userData } from "@/utils/userData"
 
 import {
   Navbar as NavbarWrapper,
@@ -8,29 +8,30 @@ import {
   LogoTipoText,
   NavbarLinks,
   NavbarMobileArea,
-} from "./style";
+} from "./style"
 
-import { FaBars } from "react-icons/fa";
-import { IoClose } from "react-icons/io5";
-import { Button } from "@/styles/Buttons";
-import { Container, Flex } from "@/styles/Global";
+import { FaBars } from "react-icons/fa"
+import { IoClose } from "react-icons/io5"
+import { Button } from "@/styles/Buttons"
+import { Container, Flex } from "@/styles/Global"
+import { UserImage } from "@/pages/home/style"
 
 export interface MenuButtonOpen {
-  open: Boolean;
-  setOpen: (value: Boolean) => void;
+  open: Boolean
+  setOpen: (value: Boolean) => void
 }
 
 export const NavBar = (): JSX.Element => {
 
-  const isWide = useMedia({ maxWidth: "991px" });
+  const isWide = useMedia({ maxWidth: "991px" })
 
-  document.title = userData.nameUser;
+  document.title = userData.nameUser
 
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false)
 
   const OpenMenu = () => {
-    setOpen(!open);
-  };
+    setOpen(!open)
+  }
 
   return (
     <NavbarWrapper>
@@ -54,8 +55,8 @@ export const NavBar = (): JSX.Element => {
         </Flex>
       </Container>
     </NavbarWrapper>
-  );
-};
+  )
+}
 
 export const NavLinks = (): JSX.Element => {
   return (
@@ -70,8 +71,8 @@ export const NavLinks = (): JSX.Element => {
         Contact
       </Button>
       <Button type="btLink" as="a" color="grey4" href={`#social-media`}>
-        Social Media
+        Social
       </Button>
     </NavbarLinks>
-  );
-};
+  )
+}

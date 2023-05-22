@@ -1,6 +1,6 @@
-import { styled } from "@/styles/stitches.config";
-import { Flex } from "@/styles/Global";
-import { Text } from "@/styles/Text";
+import { styled } from "@/styles/stitches.config"
+import { Flex } from "@/styles/Global"
+import { Text } from "@/styles/Text"
 
 export const ProjectStack = styled(Flex, {
   margin: "1.25rem 0 1.25rem 0",
@@ -8,18 +8,18 @@ export const ProjectStack = styled(Flex, {
     flexDirection: "column",
     alignItems: "self-start",
   },
-});
+})
 
 export const ProjectStackTech = styled("span", {
   backgroundColor: "$grey1",
   color: "$grey2",
   padding: "0  0.5rem",
   borderRadius: "$2",
-});
+})
 
 export const ProjectLinks = styled(Flex, {
   marginTop: "2.25rem",
-});
+})
 
 export const ProjectLink = styled("a", {
   fontSize: "1rem",
@@ -37,9 +37,9 @@ export const ProjectLink = styled("a", {
   [`& svg`]: {
     marginRight: "$1",
   },
-});
+})
 
-export const ProjectTitle = styled(Text, {});
+export const ProjectTitle = styled(Text, {})
 
 export const Project = styled("article", {
   marginTop: "4rem",
@@ -47,11 +47,12 @@ export const Project = styled("article", {
     [`& ${ProjectTitle}:first-child`]: {
       position: "relative",
       width: "max-content",
-
+      
+      
       "@mobile": {
         width: "auto",
       },
-
+      
       "&::before": {
         content: 'New',
         position: "absolute",
@@ -78,4 +79,4 @@ export const Project = styled("article", {
       },
     },
   },
-});
+})
