@@ -126,7 +126,7 @@ export const ProjectsAreaSocialMediaMessage = styled("article", {
   },
 })
 
-export const ProjectsAreaContent = styled("div", {
+export const ProjectsAreaContent = styled("ul", {
   width: "100%",
   display: "grid",
   gridTemplateColumns: "repeat(2, 1fr)",
@@ -137,7 +137,7 @@ export const ProjectsAreaContent = styled("div", {
   },
 })
 
-export const ProjectAreaWrapperColumns = styled("div", {
+export const ProjectAreaWrapperColumns = styled("section", {
   position: "relative",
   alignItems: "flex-start",
   "@mobile": {

@@ -5,7 +5,6 @@ import { UserImage } from "@/pages/home/style"
 import { userData } from "@/utils/userData"
 import { FaLinkedinIn, FaInstagram } from "react-icons/fa"
 import { Button } from "@/styles/Buttons"
-// import { HandEffect } from "../HandEffect"
 
 export const Footer = (): JSX.Element => {
   return (
@@ -21,7 +20,10 @@ export const Footer = (): JSX.Element => {
 		  />
 		  <Box css={{ marginLeft: "$2" }}>
 			<Text type="heading4" color="grey5" css={{ marginBottom: "$2" }}>
-			   Thank you! {/* <HandEffect /> */}
+			   Big thank you! 
+			</Text>
+			<Text type="body1" color="grey2">
+			  Wanna know more about me?
 			</Text>
 			<Text type="body1" color="grey2">
 			  Follow me on my social networks and let's talk
