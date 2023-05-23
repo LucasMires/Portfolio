@@ -79,8 +79,8 @@ export const Home = (): JSX.Element => {
                 <FaGithub />
               </Button>
             </HeaderButtonsArea>
-            /<Text as="h2" type="body1" color="grey2">
-              Few Tecnologies that I had study in this past few years
+            /<Text as="h2" type="heading3" color="grey2">
+              Here a few Tecnologies that I had study on this past few years:
             </Text>
             <StackCards>
               {stackData.map((stack, index) => (
