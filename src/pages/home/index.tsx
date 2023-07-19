@@ -80,7 +80,7 @@ export const Home = (): JSX.Element => {
               </Button>
             </HeaderButtonsArea>
             /<Text as="h2" type="heading3" color="grey2">
-              Here a few Tecnologies that I had study on this past few years:
+              Here a few Technologies I study on the past 2 years:
             </Text>
             <StackCards>
               {stackData.map((stack, index) => (
