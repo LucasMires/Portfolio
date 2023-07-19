@@ -44,22 +44,26 @@ export const Home = (): JSX.Element => {
                 width={"48px"}
                 height={"48px"}
               />
-              <Text color="grey4">Hello, my name is {userData.nameUser}</Text>
+              <Text color="grey4">Hi, my name is {userData.nameUser}</Text>
             </Flex>
             <Text as="h1" type="heading1" color="grey5">
-            I{" "}
-              really{" "}
+              I'm{" "}
               <Text as="span" type="heading1" color="brand1">
-                enjoy
+                Full Stack
               </Text>{" "}
-              create, study and{" "}
+              Web Developer,{" "}
+              who really{" "}
               <Text as="span" type="heading1" color="brand1">
-                developing
+                enjoy 
               </Text>{" "}
-              projects
+              create, study and {""}
+              <Text as="span" type="heading1" color="brand1">
+                learn 
+              </Text>{" "}
+              new things.
             </Text>
             <Text type="body1" color="grey2">
-              Discover here in this environment, created to you understand a bit more about me and my work
+              Here are some projects that I had created and with those you will understand a bit more about me and my work
             </Text>
             <HeaderButtonsArea>
               <Button as="a" type="primary" href="#projects">
@@ -80,7 +84,7 @@ export const Home = (): JSX.Element => {
               </Button>
             </HeaderButtonsArea>
             /<Text as="h2" type="heading3" color="grey2">
-              Here a few Technologies I study on the past 2 years:
+              Bellow you'll see few Technologies that I had study on the past 2 years:
             </Text>
             <StackCards>
               {stackData.map((stack, index) => (
