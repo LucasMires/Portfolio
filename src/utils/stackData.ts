@@ -12,6 +12,7 @@ import {
 	FaNode,
 	FaReact,
 } from "react-icons/fa"
+import { SiTailwindcss, SiPrisma } from "react-icons/si"
 import { DiDjango } from "react-icons/di"
 
 export const stackData = [
@@ -24,15 +25,25 @@ export const stackData = [
 		title: "CSS",
 		img: FaCss3Alt,
 	},
-	
+
 	{
 		title: "TypeScript",
 		img: SiTypescript 
 	},
-	
+
+	{
+		title: "Python",
+		img: FaPython 
+	},
+
 	{
 		title: "React",
 		img: FaReact,
+	},
+
+	{
+		title: "Next.js",
+		img: TbBrandNextjs 
 	},
 
 	{
@@ -41,33 +52,33 @@ export const stackData = [
 	},
 
 	{
-		title: "Next.js",
-		img: TbBrandNextjs 
+		title: "TailWind",
+		img: SiTailwindcss,
 	},
-		
+
 	{
 		title: "Node JS",
 		img: FaNode,
 	},
 	
 	{
-		title: "Python",
-		img: FaPython 
-	},
-		
-	{
 		title: "Nest JS",
 		img: SiNestjs,
 	},
 
 	{
-		title: "PostgreSQL",
-		img: SiPostgresql 
+		title: "Prisma",
+		img: SiPrisma
 	},
 
 	{
 		title: "Django",
 		img: DiDjango
+	},
+
+	{
+		title: "PostgreSQL",
+		img: SiPostgresql 
 	},
 
 	{
